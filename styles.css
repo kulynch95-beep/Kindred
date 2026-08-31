@@ -164,7 +164,7 @@ img {
   flex-shrink: 0;
 }
 .nav-logo-img {
-  height: 88px;
+  height: 35px;
   width: auto;
 }
 
@@ -242,14 +242,15 @@ img {
 }
 
 .hero-logo {
-  margin-bottom: -80px;
+  margin-bottom: 24px;
   opacity: 0;
   animation: fadeUp 0.8s 0.35s forwards;
 }
 .hero-logo img {
-  max-width: clamp(240px, 38vw, 520px);
+  max-width: clamp(300px, 48vw, 630px);
   height: auto;
   margin: 0 auto;
+  display: block;
 }
 
 .hero-tagline {
