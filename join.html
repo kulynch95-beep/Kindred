@@ -48,6 +48,106 @@
     .apply-btn {
       margin-top: 56px;
     }
+
+    /* ── Open Contracts section ── */
+    .open-contracts {
+      background: var(--color-cream);
+      padding: 88px var(--gutter) 100px;
+    }
+    .open-contracts .section-eyebrow { margin-bottom: 10px; }
+    .open-contracts .section-title {
+      font-size: clamp(28px, 3.5vw, 44px);
+      margin-bottom: 10px;
+    }
+    .contracts-intro {
+      font-family: var(--font-serif);
+      font-size: 17px;
+      font-style: italic;
+      font-weight: 300;
+      color: var(--color-dark);
+      margin-bottom: 52px;
+    }
+
+    .contracts-list {
+      max-width: 760px;
+      margin: 0 auto;
+      list-style: none;
+      padding: 0;
+    }
+    .contract-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      padding: 28px 0;
+      border-top: 1px solid rgba(61,58,46,0.12);
+    }
+    .contract-row:last-child { border-bottom: 1px solid rgba(61,58,46,0.12); }
+
+    .contract-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--color-blush);
+      flex-shrink: 0;
+      margin-top: 7px;
+    }
+
+    .contract-body { flex: 1; }
+    .contract-family {
+      font-family: var(--font-serif);
+      font-size: 20px;
+      font-weight: 500;
+      color: var(--color-black);
+      margin: 0 0 4px;
+    }
+    .contract-role {
+      font-family: var(--font-sans);
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--color-dark);
+      margin: 0;
+    }
+
+    .contract-meta {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 4px;
+      flex-shrink: 0;
+    }
+    .contract-location {
+      font-family: var(--font-sans);
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--color-mid);
+    }
+    .contract-start {
+      font-family: var(--font-sans);
+      font-size: 13px;
+      color: var(--color-mid);
+    }
+    .contract-badge {
+      display: inline-block;
+      font-family: var(--font-sans);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 3px 9px;
+      border-radius: 20px;
+      background: var(--color-sage-light, #D8EDE3);
+      color: var(--color-dark);
+    }
+    .contract-badge--amber {
+      background: #E8D8B8;
+    }
+
+    @media (max-width: 540px) {
+      .contract-row { flex-wrap: wrap; }
+      .contract-meta { align-items: flex-start; flex-direction: row; gap: 10px; flex-wrap: wrap; }
+    }
   </style>
 </head>
 <body>
@@ -162,6 +262,102 @@
 
 
   </main>
+
+
+  <!-- ═══════════════════════════════════
+       OPEN CONTRACTS
+       ═══════════════════════════════════ -->
+  <section class="open-contracts">
+    <div style="max-width: 760px; margin: 0 auto;">
+      <span class="section-eyebrow">Openings</span>
+      <div class="rule"></div>
+      <h2 class="section-title">Families looking for care now.</h2>
+      <p class="contracts-intro">If something looks like a fit, apply and we'll be in touch.</p>
+    </div>
+
+    <ul class="contracts-list">
+
+      <li class="contract-row">
+        <span class="contract-dot"></span>
+        <div class="contract-body">
+          <p class="contract-family">Full-time Nanny</p>
+          <p class="contract-role">30–35 hrs/week · 1 newborn · Mar 1 – May 31</p>
+        </div>
+        <div class="contract-meta">
+          <span class="contract-location">San Jose</span>
+          <span class="contract-start">Mar 1 – May 31</span>
+          <span class="contract-badge contract-badge--amber">Short-term</span>
+        </div>
+      </li>
+
+      <li class="contract-row">
+        <span class="contract-dot"></span>
+        <div class="contract-body">
+          <p class="contract-family">Full-time Nanny</p>
+          <p class="contract-role">35 hrs/week · 1 infant · mom works from home</p>
+        </div>
+        <div class="contract-meta">
+          <span class="contract-location">Ft. Caroline Shores</span>
+          <span class="contract-start">Start: December 2026</span>
+          <span class="contract-badge">Full-time</span>
+        </div>
+      </li>
+
+      <li class="contract-row">
+        <span class="contract-dot"></span>
+        <div class="contract-body">
+          <p class="contract-family">Part-time Nanny</p>
+          <p class="contract-role">3 afternoons/week · 4-year-old twins (boy & girl)</p>
+        </div>
+        <div class="contract-meta">
+          <span class="contract-location">Wells Creek</span>
+          <span class="contract-start">Start: December 2026</span>
+          <span class="contract-badge contract-badge--amber">Part-time</span>
+        </div>
+      </li>
+
+      <li class="contract-row">
+        <span class="contract-dot"></span>
+        <div class="contract-body">
+          <p class="contract-family">Backup Sitter</p>
+          <p class="contract-role">5–15 hrs/week · early mornings & evenings · 2 children (ages 3 & 5)</p>
+        </div>
+        <div class="contract-meta">
+          <span class="contract-location">San Pablo</span>
+          <span class="contract-start">Start: Immediate</span>
+          <span class="contract-badge">Flexible</span>
+        </div>
+      </li>
+
+      <li class="contract-row">
+        <span class="contract-dot"></span>
+        <div class="contract-body">
+          <p class="contract-family">Nanny / House Manager</p>
+          <p class="contract-role">Full-time · 2 girls (ages 3 & 18 mo) · newborn girl arriving March</p>
+        </div>
+        <div class="contract-meta">
+          <span class="contract-location">Sawgrass</span>
+          <span class="contract-start">Start: January 2027</span>
+          <span class="contract-badge">Full-time</span>
+        </div>
+      </li>
+
+    </ul>
+
+    <div style="max-width: 760px; margin: 48px auto 0; text-align: center;">
+      <a class="btn-primary btn-external"
+         href="https://forms.fillout.com/t/kAfeKKfNkvus"
+         target="_blank" rel="noopener noreferrer">
+        Apply to be considered
+        <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+             fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+          <polyline points="15 3 21 3 21 9"/>
+          <line x1="10" y1="14" x2="21" y2="3"/>
+        </svg>
+      </a>
+    </div>
+  </section>
 
 
   <!-- ═══════════════════════════════════
