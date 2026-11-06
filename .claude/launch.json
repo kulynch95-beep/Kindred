@@ -4,8 +4,9 @@
     {
       "name": "kindred",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "8743"],
-      "port": 8743
+      "runtimeArgs": ["-m", "http.server", "8766"],
+      "port": 8766,
+      "url": "http://localhost:8766"
     }
   ]
 }
